@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>עלי אקספרס מציאות - דילים אמיתיים, מחירים מצחיקים</title>
+    <link rel="icon" type="image/jpeg" href="images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;400&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        direction: rtl;
+        font-family: "Heebo", Arial, sans-serif;
+        background: linear-gradient(135deg, #fffaf6 0%, #f0f4f8 100%);
+        margin: 0;
+        padding: 0;
+        color: #222;
+      }
+      .container {
+        max-width: 480px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+        padding: 32px 24px 24px 24px;
+        text-align: center;
+      }
+      .logo {
+        width: 140px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        font-size: 2.1em;
+        margin-bottom: 8px;
+        color: #ff4800;
+        letter-spacing: 1px;
+      }
+      .subtitle {
+        font-size: 1.1em;
+        color: #3d3d3d;
+        margin-bottom: 24px;
+      }
+      .switch-buttons {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-bottom: 18px;
+      }
+      .switch-btn {
+        background: #eee;
+        color: #1a1a1a;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 22px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background 0.2s, color 0.2s;
+        outline: none;
+      }
+      .switch-btn.active {
+        background-color: #ff4800 !important;
+        color: white !important;
+        box-shadow: 0 0 0 2px #ff4800 inset;
+      }
+
+      .groups {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .group-btn {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 12px;
+        background: linear-gradient(90deg, #ff4800 0%, #1a1a1a 100%);
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 700;
+        border: none;
+        border-radius: 12px;
+        padding: 12px 20px;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.1s;
+        text-decoration: none;
+        box-shadow: 0 2px 8px rgba(255, 72, 0, 0.1);
+        text-align: right;
+      }
+      .group-btn:hover {
+        background: linear-gradient(90deg, #1a1a1a 0%, #ff4800 100%);
+        transform: translateY(-2px) scale(1.03);
+      }
+      .group-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        border: 2px solid #e0e7ef;
+        background: #fff;
+        flex-shrink: 0;
+      }
+      .divider {
+        margin: 32px 0 16px 0;
+        border: none;
+        border-top: 1.5px solid #e0e7ef;
+      }
+      .features {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 24px;
+        color: #ff4800;
+        font-weight: 500;
+      }
+      .footer {
+        font-size: 0.95em;
+        color: #7b8794;
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/photo_2025-05-23_16-43-47.jpg" alt="לוגו עלי אקספרס מציאות" class="logo" />
+      <h1>ברוכים הבאים לעלי אקספרס מציאות!</h1>
+      <div class="subtitle">
+        קהילת הצרכנות החכמה של ישראל – דילים שווים, מוצרים בדוקים, ומבצעים שלא תמצאו לבד.<br />
+        הצטרפו עכשיו לקבוצת הוואטסאפ או הטלגרם שמתאימה לכם
+      </div>
+      <div class="switch-buttons">
+        <button id="whatsappBtn" class="switch-btn">ווצאפ</button>
+        <button id="telegramBtn" class="switch-btn">טלגרם</button>
+      </div>
+      <div class="groups">
+        <a id="group1" href="https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf" class="group-btn" target="_blank">
+          <img id="icon1" src="images/photo_2025-05-23_16-43-47.jpg" alt="הקבוצה הראשית" class="group-icon" />
+          הקבוצה הראשית
+        </a>
+        <a id="group3" href="https://chat.whatsapp.com/HYboLCLGBka14ndRazDaQF" class="group-btn" target="_blank">
+          <img id="icon3" src="images/photo_2025-05-23_16-43-12.jpg" alt="נשים" class="group-icon" />
+          מציאות לנשים
+        </a>
+        <a id="group4" href="https://chat.whatsapp.com/LcerXy979qh8MAZPAgryb9" class="group-btn" target="_blank">
+          <img id="icon4" src="images/photo_2025-05-23_16-43-08.jpg" alt="תינוקות" class="group-icon" />
+          מציאות להורים וילדים
+        </a>
+      </div>
+      <hr class="divider" />
+      <div class="features">
+        ⭐ דילים חמים כל יום<br />
+        ⭐ המלצות אמינות ואובייקטיביות<br />
+        ⭐ תמיכה ושאלות על קנייה חכמה<br />
+        ⭐ קהילה איכותית שמציאה זה הספורט שלה
+      </div>
+      <div class="footer">© כל הזכויות שמורות - עלי אקספרס מציאות 2025</div>
+    </div>
+    <script>
+  const whatsappLinks = [
+    "https://chat.whatsapp.com/Ioaj06UZaG1DfIEIrf5jTf",
+    "https://chat.whatsapp.com/HYboLCLGBka14ndRazDaQF",
+    "https://chat.whatsapp.com/LcerXy979qh8MAZPAgryb9",
+  ];
+  const telegramLinks = [
+    "https://t.me/aliexpressbzoll",
+    "https://t.me/banotkonot",
+    "https://t.me/babydeall",
+  ];
+  const whatsappIcons = [
+    "images/photo_2025-05-23_16-43-47.jpg",
+    "images/photo_2025-05-23_16-43-12.jpg",
+    "images/photo_2025-05-23_16-43-08.jpg",
+  ];
+  const telegramIcons = [
+    "images/photo_2025-05-23_16-43-47.jpg",
+    "images/photo_2025-05-23_16-43-12.jpg",
+    "images/photo_2025-05-23_16-43-08.jpg",
+  ];
+
+function switchLinks(type) {
+  const links = type === "whatsapp" ? whatsappLinks : telegramLinks;
+  const icons = type === "whatsapp" ? whatsappIcons : telegramIcons;
+
+  // התאמה רק לקבוצות שיש בפועל (1, 3, 4)
+  const groups = [1, 3, 4];
+  for (let i = 0; i < groups.length; i++) {
+    const groupId = groups[i];
+    document.getElementById("group" + groupId).href = links[i];
+    document.getElementById("icon" + groupId).src = icons[i];
+  }
+
+  const whatsappBtn = document.getElementById("whatsappBtn");
+  const telegramBtn = document.getElementById("telegramBtn");
+
+  if (type === "whatsapp") {
+    whatsappBtn.classList.add("active");
+    telegramBtn.classList.remove("active");
+  } else {
+    telegramBtn.classList.add("active");
+    whatsappBtn.classList.remove("active");
+  }
+}
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("whatsappBtn").addEventListener("click", () => {
+      switchLinks("whatsapp");
+    });
+    document.getElementById("telegramBtn").addEventListener("click", () => {
+      switchLinks("telegram");
+    });
+    switchLinks("whatsapp");
+  });
+</script>
+
+  </body>
+</html>
